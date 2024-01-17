@@ -1,0 +1,92 @@
+body{
+  font-size: 25px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#first{
+  background-image: url(../media/beach.webm);
+  background-size: cover;
+  background-repeat: repeat;
+  text-align: center;
+}
+
+input, select{
+  width: 22em; 
+  height: 2em; 
+  font-size: 0.6em;
+}
+
+textarea{
+  width: 25em; 
+  height: 5em; 
+}
+
+#selectMany{
+  width: 22em; 
+  height: 4em; 
+  font-size: 0.6em;
+}
+.small{
+  width: 1.5em; 
+  height: 1.5em; 
+}
+
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  border-radius: 8px;
+  font-size: 1em;
+  flex-direction:column;
+
+  margin: 1em 1em 1em 1em;
+}
+
+.form-row {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+  border-radius: 8px;
+  font-size: 1em;
+
+  margin: 1em 1em 1em 1em;
+}
+
+
+form input[type="submit"] {
+  padding: 15px 20px 30px 20px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 74px;
+  
+}
+
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 322px) {
+  body{
+    font-size: 22px;
+  }
+
+}
+
+@media only screen and (max-width: 321px) {
+  body{
+    font-size: 17px;
+  }
+}

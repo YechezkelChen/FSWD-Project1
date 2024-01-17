@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/val.css">
-    <title>Contact - My Trip</title>
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <title>Contact</title>
 </head>
 
 <body>
@@ -17,22 +17,29 @@
             <a href="contact.html">Contact</a>
             <a href="compare_prices.html">Compare prices</a>
             <a href="about.html">About</a>
+            <img src="images/together_we_will_win.gif" alt="together we will win">
+
         </nav>
     </header>
 
     <main>
-        <form class="form-container" action="/submitForm.html" target="_self" method="post" autocomplete="on">
+        <div id="first">
+            <h1>Personalized trip</h1>
+            <p>In this form you can show us how you would like the perfect vacation for you, then our agent will contact you on how to make it all happen.</p>
+        </div>
+        
+        <form class="form-container" action="/about.html" target="_self" method="post" autocomplete="on">
             <div class="form-row">
                 <fieldset>
-                    <legend>Personal Information:</legend>
+                    <legend>I am:</legend>
                     <label for="fname">First name:</label><br>
                     <input type="text" id="fname" name="fname" autocomplete="on" required autofocus><br>
                     <label for="lname">Last name:</label><br>
                     <input type="text" id="lname" name="lname" autocomplete="on" required><br>
                     <label>Gender:</label><br>
-                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <input class="small" type="radio" id="male" name="gender" value="Male" required>
                     <label for="male">Male</label><br>
-                    <input type="radio" id="female" name="gender" value="Female">
+                    <input class="small" type="radio" id="female" name="gender" value="Female">
                     <label for="female">Female</label><br>
                     <label for="email">Enter your email:</label><br>
                     <input type="email" id="email" name="email"><br>
@@ -48,27 +55,29 @@
                         <option value="Usa">Usa</option>
                         <option value="UK">UK</option>
                     </select><br>
-                    <label for="dest">to this destination:</label><br>
-                    <select id="dest" name="dest" size="4" multiple>
+                    <label for="selectMany">to this destination:</label><br>
+                    <select id="selectMany" name="selectMany" size="4" multiple>
                         <option value="Holland">Holland</option>
                         <option value="Russia">Russia</option>
                         <option value="Israel">Israel</option>
                         <option value="Austria">Austria</option>
                         <option value="Usa">Usa</option>
                         <option value="UK">UK</option>
-                    </select><br><br><br>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I would like to take recommendation on attractions for this trip</label><br>
-                    <textarea name="message" rows="3" cols="22"
-                        placeholder="More details i want you to take in count."></textarea><br>
+                    </select><br>
+                   
+                    
                     <label for="datemin">I want the trip to start from this date:</label>
                     <input type="date" id="datemin" name="datemin" min="2024-14-01"><br>
                     <label for="quantity">how many days i would like to make my trip (maximum 14):</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="14"><br>
+                    <input type="number" id="quantity" name="quantity" min="1" max="14"><br><br>
+                    <textarea name="message" rows="7" cols="45"
+                        placeholder="More details i want you to take in count."></textarea><br>
+                    <input class="small" type="checkbox" id="attractions" name="attractions" value="attractions">
+                    <label for="attractions"> I would like to take recommendation on attractions for this trip</label><br>
                 </fieldset>
             </div>
             <br>
-            <input id="btnform" type="submit" value="Send">
+            <input type="submit" value="submit">
         </form>
     </main>
 
