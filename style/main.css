@@ -8,6 +8,19 @@ nav {
   background-color: #333;
 }
 
+#news{
+  margin-left: 15px;
+
+}
+
+.destinations-header{
+  margin-left: 15px;
+}
+
+#figureCard{
+  margin-left: 0px;
+}
+
 nav a {
   float: left;
   color: #f2f2f2;
@@ -199,4 +212,8 @@ footer {
 .footer-copyright p {
   font-size: 12px;
   margin: 10px 0;
+}
+
+#about{
+  margin-left: 20px;
 }
